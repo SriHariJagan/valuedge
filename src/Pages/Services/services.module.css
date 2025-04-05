@@ -1,0 +1,89 @@
+.aboutContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-color: #f0f8ff23;
+    padding: 100px 20px 40px;
+    background-color: #282829a6;
+
+}
+
+/* Services Container */
+.serviceContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* About Work Section */
+.aboutWork {
+    padding: 20px 0;
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    /* background-color: #282829a6; */
+
+    /* background-color: #f0f8ff92; */
+}
+
+/* About Work Data */
+.aboutWorkData {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-around;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .serviceContainer,
+    .aboutWorkData {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .serviceContainer {
+        width: 95%;
+        justify-content: center;
+    }
+
+    .aboutWorkData {
+        width: 95%;
+        justify-content: center;
+    }
+
+    .aboutContainer {
+        padding: 80px 15px 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .serviceContainer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .aboutWork {
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .aboutWorkData {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .aboutContainer {
+        padding: 60px 10px 20px;
+    }
+}

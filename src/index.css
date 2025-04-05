@@ -1,0 +1,78 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+@keyframes topTOBottom {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.topToBottom{
+  animation: topTOBottom 0.8s ease-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+
+
+.appContainer {
+  background-image: url("./assets/bgImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+  .appContainer {
+      background-size: contain;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .appContainer {
+      background-size: cover;
+      background-attachment: scroll; /* Prevents background issues on mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .appContainer {
+      height: auto;
+      min-height: 100vh;
+      padding: 10px;
+  }
+}
+
+
+
+@keyframes bottomTop {
+  from{
+    transform: translateY(200px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+
+.topToBottom{
+  animation: bottomTop 0.8s ease-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}

@@ -1,0 +1,32 @@
+.aboutContainer{
+    width: 100%;
+    min-height: 500px;
+    padding: 20px 0;
+    background-color: #282829a6;
+}
+
+.aboutHeading{
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+.aboutHeading h1{
+    text-align: center;
+    color: rgb(255, 166, 0);
+}
+
+.aboutHeading p{
+    text-align: center;
+    margin-top: 8px;
+    color: rgb(223, 223, 223);
+    font-size: 17px;
+    line-height: 25px;
+}
+
+
+.aboutContent{
+    width: 80%;
+    margin: auto;
+    color: white;
+}

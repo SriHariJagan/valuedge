@@ -1,0 +1,121 @@
+/* Main Container */
+.contactContainer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #282829a6;
+}
+
+/* Heading */
+.contactHeading {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.contactHeading h1 {
+    text-transform: uppercase;
+    color: rgb(238, 172, 48);
+}
+
+.contactHeading p {
+    margin-top: 8px;
+    color: white;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+/* Contact Section - Two Column Layout */
+.contactData {
+    width: 85%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Left Side - Form */
+.contactForm {
+    flex: 1;
+    min-width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contactForm textarea {
+    height: 120px;
+}
+
+.contactForm button {
+    background-color: rgb(238, 172, 48);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contactForm button:hover {
+    background-color: #d89200;
+}
+
+/* Right Side - Contact Details */
+.contactDetails {
+    flex: 1;
+    min-width: 45%;
+}
+
+.contactDetails h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: rgba(224, 168, 90, 0.837);
+}
+
+.contactDetails p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: wheat;
+}
+
+/* Map Section */
+.mapContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contactData {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactForm,
+    .contactDetails {
+        min-width: 100%;
+    }
+
+    .contactDetails p {
+        justify-content: center;
+    }
+}

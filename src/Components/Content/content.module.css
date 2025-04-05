@@ -1,0 +1,86 @@
+/* Container */
+.contentContainer {
+    margin: auto;
+    margin-top: 30px;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 8px;
+    background-color: rgba(124, 124, 124, 0.178);
+    padding: 20px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.buttons button {
+    padding: 8px 12px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    background-color: rgb(195, 195, 195);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button:hover,
+.selectedButton {
+    background-color: rgba(237, 220, 159, 0.701) !important;
+    color: rgb(255, 255, 255);
+    transform: scale(1.08);
+}
+
+/* Content Layout */
+.contentData {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+/* Image Section */
+.contentDataImg {
+    flex: 1;
+    max-width: 48%;
+    border-radius: 15px;
+}
+
+.contentDataImg img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Description Section */
+.contentDescription {
+    flex: 1;
+    max-width: 48%;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .contentContainer {
+        width: 100%;
+    }
+
+    .contentData {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contentDataImg,
+    .contentDescription {
+        max-width: 100%;
+    }
+}

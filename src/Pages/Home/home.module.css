@@ -1,0 +1,169 @@
+/* Main Container */
+.homeContainer {
+    width: 100%;
+    height: 88.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #f0f8ff23;
+    background-color: #282829a6;
+
+    padding: 20px;
+}
+
+/* Social Icons */
+.socialIcons {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    position: absolute;
+    left: 20px;
+    top: 40%;
+    padding: 5px;
+}
+
+.socialIcons::before,
+.socialIcons::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background-color: red;
+}
+
+.socialIcons::before {
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.socialIcons::after {
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.socialIcons> li {
+    display: block;
+    object-fit: contain;
+}
+
+/* Social Icons Images */
+.iconImg {
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 350ms;
+    display: block;
+}
+
+.socialIcons> li> img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+/* Home Content (Main Section) */
+.homeContent {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 20px;
+}
+
+/* Carousel Section */
+.carousel {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Carousel Image */
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .homeContainer {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .socialIcons {
+        left: 10px;
+        top: 35%;
+    }
+
+    .carousel {
+        width: 95%;
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homeContainer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .socialIcons {
+        display: none; /* Hides social icons on smaller screens */
+    }
+
+    .homeContent {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 400px;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: 100%;
+        /* max-height: 350px; */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .homeContainer {
+        padding: 15px 0;
+    }
+
+    .homeContent {
+        padding: 10px;
+    }
+
+    .carousel {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel img {
+        border-radius: 5px;
+        max-height: 280px;
+    }
+}

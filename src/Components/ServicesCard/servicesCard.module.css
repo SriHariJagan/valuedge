@@ -1,0 +1,133 @@
+.serviceCard {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transition: 350ms;
+    box-shadow: 0 0 8px 0.1px rgba(104, 104, 104, 0.677);
+    border-radius: 10px; /* Keeps modern design */
+}
+
+.serviceCard:hover {
+    transform: scale(1.08);
+}
+
+/* Image inside the card */
+.serviceCard img {
+    width: 80px;
+}
+
+.serviceCardContent {
+    text-align: center;
+}
+
+.serviceCard h1 {
+    margin-top: 10px;
+    padding: 10px;
+    color: rgb(78, 78, 173);
+    text-transform: capitalize;
+    font-size: 1.8rem;
+}
+
+.serviceCard p {
+    padding: 0 10px;
+    text-align: center;
+    color: rgb(58, 58, 58);
+    font-size: 0.95rem;
+}
+
+/* Button styling */
+.serviceCard button {
+    margin-block: 15px;
+    padding: 8px 12px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: rgba(143, 142, 141, 0.681);
+    color: white;
+    transition: 300ms;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.serviceCard button:hover {
+    background-color: rgba(109, 115, 214, 0.653);
+    border-radius: 8px;
+}
+
+/* Alternating Positioning */
+.serviceCard:nth-child(odd) { 
+    position: relative;
+    top: -30px;
+}
+
+.serviceCard:nth-child(even) {
+    position: relative;
+    top: 30px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .serviceCard {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .serviceCard {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .serviceCard {
+        max-width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .serviceCard:nth-child(odd),
+    .serviceCard:nth-child(even) {
+        top: 0;
+    }
+
+    .serviceCard h1 {
+        font-size: 1.6rem;
+    }
+
+    .serviceCard p {
+        font-size: 0.9rem;
+    }
+
+    .serviceCard img {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .serviceCard {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .serviceCard h1 {
+        font-size: 1.5rem;
+    }
+
+    .serviceCard p {
+        font-size: 0.85rem;
+    }
+
+    .serviceCard img {
+        width: 60px;
+    }
+}
