@@ -1,6 +1,6 @@
 .servicesPageContainer{
     width: 100%;
-    min-height: 300px;
+    min-height: 55vh;
     padding: 20px 0;
     background-color: #282829a6;
     display: flex;
