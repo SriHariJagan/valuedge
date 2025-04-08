@@ -1,32 +1,86 @@
-.aboutContainer{
+.aboutContainer {
     width: 100%;
     min-height: 500px;
     padding: 20px 0;
     background-color: #282829a6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.aboutHeading{
+.aboutHeading {
     width: 80%;
+    max-width: 900px;
     margin: auto;
     color: white;
+    text-align: center;
 }
 
-.aboutHeading h1{
-    text-align: center;
+.aboutHeading h1 {
     color: rgb(255, 166, 0);
+    font-size: 2rem;
 }
 
-.aboutHeading p{
-    text-align: center;
+.aboutHeading p {
     margin-top: 8px;
     color: rgb(223, 223, 223);
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
-
-.aboutContent{
+/* About Content */
+.aboutContent {
     width: 80%;
+    max-width: 900px;
     margin: auto;
     color: white;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .aboutHeading h1 {
+        font-size: 1.8rem;
+    }
+
+    .aboutHeading p {
+        font-size: 0.95rem;
+    }
+
+    .aboutContent {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutHeading {
+        width: 90%;
+    }
+
+    .aboutHeading h1 {
+        font-size: 1.5rem;
+    }
+
+    .aboutHeading p {
+        font-size: 0.9rem;
+    }
+
+    .aboutContent {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutHeading h1 {
+        font-size: 1.3rem;
+    }
+
+    .aboutHeading p {
+        font-size: 0.85rem;
+    }
+
+    .aboutContent {
+        width: 100%;
+        padding: 0 15px;
+    }
 }

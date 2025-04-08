@@ -77,14 +77,14 @@ export const serviceWorkData = [
     img: "https://valuedge-solutions.com/img/img1.jpg",
   },
   {
-    id: 1,
+    id: 2,
     name: "Application Development",
     description:
       "We are experts in designing, developing high quality, customized software solutions at affordable cost using industry standards methodologies, tools and technologies.",
     img: "https://valuedge-solutions.com/img/img2.jpg",
   },
   {
-    id: 1,
+    id: 3,
     name: "Mobility Services",
     description:
       "Technology is changing the way the business is done. The ongoing march towards a ubiquitous digital lifestyle and tech savvy world needs to see an effective web presence.",

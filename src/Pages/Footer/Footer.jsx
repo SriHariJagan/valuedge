@@ -28,8 +28,8 @@ const Footer = () => {
             </a>
           </p>
         </div>
-
-        {/* <div className={styles.location}>
+{/* 
+        <div className={styles.location}>
           <h3>Vizag</h3>
           <p>
             #39-6-19//1, Sector - 6, Murali Nagar, Vishakhapatnam - 530007.

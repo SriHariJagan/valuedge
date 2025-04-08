@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './home.module.css';
 import { socialIcons, homeCarousel } from '../../constants';
+import { Link } from 'react-router-dom';
 
 export const Home = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

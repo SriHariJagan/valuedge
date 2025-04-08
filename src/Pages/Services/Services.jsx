@@ -10,7 +10,7 @@ const Services = () => {
   return (
     <div className={styles.aboutContainer}>
         <div className={styles.serviceContainer}>
-            {servicesCardData.map((data) => <ServicesCard {...data}/>)}
+            {servicesCardData.map((data) => <ServicesCard key={data.id} {...data}/>)}
         </div>
 
         <div className={styles.aboutWork}>

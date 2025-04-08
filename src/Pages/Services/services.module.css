@@ -73,7 +73,7 @@
 
     .aboutWork {
         margin-top: 50px;
-        padding: 15px;
+        padding:  15px;
     }
 
     .aboutWorkData {
@@ -84,6 +84,6 @@
     }
 
     .aboutContainer {
-        padding: 5px 10px 20px;
+        padding: 10px 10px 20px;
     }
 }

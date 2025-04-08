@@ -1,77 +1,92 @@
-*{
+/* Reset */
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-
-
-@keyframes topTOBottom {
-  from {
-    opacity: 0;
-    transform: translateY(200px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Background Video */
+.bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
-.topToBottom{
-  animation: topTOBottom 0.8s ease-out;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-}
-
-
-
+/* Main App Container */
 .appContainer {
-  background-image: url("./assets/bgImage.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   position: relative;
   width: 100%;
   height: 100vh;
   overflow-y: auto;
 }
 
+/* Content Wrapper */
+.pageContent {
+  position: relative;
+  z-index: 1;
+}
 
+/* 3D Animation for Carousel */
+@keyframes slide3D {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.carousel {
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  animation: slide3D 8s infinite linear;
+}
 
 /* Responsive Adjustments */
 @media screen and (max-width: 1024px) {
   .appContainer {
-      background-size: contain;
+    background-size: contain;
   }
 }
 
 @media screen and (max-width: 768px) {
   .appContainer {
-      background-size: cover;
-      background-attachment: scroll; /* Prevents background issues on mobile */
+    background-size: cover;
+    background-attachment: scroll;
   }
 }
 
 @media screen and (max-width: 480px) {
   .appContainer {
-      height: auto;
-      min-height: 100vh;
-      /* padding: 10px; */
+    height: auto;
+    min-height: 100vh;
+    /* padding: 10px; */
   }
 }
 
-
-
+/* Scroll Animation */
 @keyframes bottomTop {
-  from{
+  from {
     transform: translateY(200px);
   }
-  to{
+  to {
     transform: translateY(0);
   }
 }
 
-.topToBottom{
+.topToBottom {
   animation: bottomTop 0.8s ease-out;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
